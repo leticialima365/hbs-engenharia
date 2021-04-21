@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+@import "base/_variables";
+@import "base/_fonts";
+@import "base/_mixins";
+@import "base/_reset";
+@import "base/_global";
+
+@import "modules/_content";
+@import "modules/_header";
+@import "modules/_footer";
+
+
+@import "modules/owl.carousel";

@@ -1,0 +1,87 @@
+header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    .flex{
+        align-items: flex-start;
+    }
+    .logo{
+        width: 8rem;
+        height: 3.3rem;
+        margin: 1.5rem 0;
+        img{
+            @mixin imgContain;
+        }
+    }
+    .menu-line{
+        padding-right: 10rem;
+        ul{
+            display: flex;
+            margin: 0;
+            li{
+                position: relative;
+                &:hover{
+                    ul{display:flex;}
+                }
+                a{
+                    font-size: 1.3rem;
+                    color: #fff;
+                    font-weight: 400;
+                    text-decoration: none;
+                    padding: 2.4rem 1.6rem 2.6rem;
+                    display: block;
+                    text-align: center;
+                    @mixin transition;
+                    &:hover{
+                        background: $blue;
+                        color: #fff;
+                    }
+                } 
+                &.open-sub{
+                    a{font-weight: 700;}
+                    ul{
+                        display: flex;
+                    }
+                }
+                ul{
+                    flex-direction:column;
+                    padding: 0;
+                    display: none;
+                    li{
+                        a{
+                            background: #fff;
+                            color: #161616;
+                            font-weight: 400!important;
+                            padding: 1.6rem 0;
+                            border-bottom: 2px solid #9E9E9E;
+                            &:hover{
+                                border-bottom: 2px solid #fff;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .c-button{
+        width: 10rem;
+        height: 6.3rem;
+        font-size: 1.2rem;
+        line-height: 6.25rem;
+        color: $blue;
+        text-align: center;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: #fff;
+        display: block;
+        @mixin transition;
+        &:hover{
+            background: $blue;
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+.contato-footer{
+    position: relative;
+    background: $black;
+    padding: 2.2rem 0 4rem;
+    .logo-hbr{
+        width: 7.5rem;
+        height: 4rem;
+        position: absolute;
+        top: 3.5rem;
+        right: 6rem;
+        img{
+            @mixin imgContain;
+        }
+    }
+    .title-box{
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #fff;
+        p{
+            font-size: 1.2rem;
+            line-height: 2rem;
+            text-transform: initial;
+            color:#9E9E9E;
+            margin:.7rem 0 .5rem;
+        }
+    }
+    .list-contact{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 2rem 0;
+        &.line-b{
+            border-bottom: 1px solid #fff;
+        }
+        .item-contact{
+            width: 22rem;
+            text-align: left;
+        }
+        .tt-item{
+            color:#9E9E9E;
+            margin:0 0 .5rem;
+        }
+    }
+    .txt-item{
+        font-size: 1.2rem;
+        line-height: 2rem;
+        font-weight: 400;
+        color: #fff;
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        img{
+            width: 1.8rem;
+            height: 1.8rem;
+            margin-right: 1rem;
+            object-fit: contain;
+        }
+    }
+    .l-item{
+        display: flex;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        margin: 1rem 0 0;
+        a{
+            color:#fff;
+            margin-right: 3rem;
+            font-weight: 400;
+            &:last-child{margin-right: 0;}
+        }
+    }
+}
+footer{
+    background: #000;
+    width: 100%;
+    padding: 1rem;
+    .flex{
+        align-items: center;
+    }
+    p{color: #fff;}
+    .logo-footer{
+        width: 13.5rem;
+        img{
+            @mixin imgContain;
+        }
+    }
+}

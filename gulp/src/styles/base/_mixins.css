@@ -1,0 +1,55 @@
+@define-mixin fontDef{
+	font-family: 'Poppins', sans-serif;
+}
+
+
+@define-mixin transition{
+	transition: .3s all ease;
+}
+@define-mixin transition15{
+	transition: 1.5s all ease;
+}
+
+@define-mixin atSmall {
+	@media (max-width: 600px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atMedium {
+	@media (max-width: 1024px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atLarge {
+	@media (max-width: 1280px) {
+		@mixin-content;
+	}
+}
+
+@define-mixin atXLarge {
+	@media (min-width: 1540px) {
+		@mixin-content;
+	}
+}
+@define-mixin imgContain {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+@define-mixin imgCover {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+@define-mixin clearfix {
+	&::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+}
+
+
