@@ -24,6 +24,9 @@
 
 	<link rel="icon" href="" type="image/x-icon" />
 	<link rel="shortcut icon" href="" type="image/x-icon" />
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" href="./dist/styles/styles.min.css">
 	<link rel="stylesheet" href="./dist/styles/vendor/vendor.css">
@@ -37,6 +40,10 @@
 			<figure class="logo">
 				<img src="./dist/images/logo-hbr.svg" title="HBR Engenharia" alt="HBR Engenharia">
 			</figure>
+			<figure class="menu-mobile">
+				<img src="./dist/images/menu-mob.svg">
+			</figure>
+
 			<nav class="menu-line">
 				<ul>
 					<li>
@@ -45,7 +52,7 @@
 					<li>
 						<a href="#">Empreendimentos</a>
 					</li>
-					<li class="open-sub">
+					<li class="submenu">
 						<a href="#">Portfólio e Serviços</a>
 						<ul>
 							<li>

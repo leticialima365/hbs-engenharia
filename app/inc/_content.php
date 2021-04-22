@@ -1,7 +1,15 @@
 
 <div class="slide-topo owl-carousel">
     <div class="item-slide" style="background-image: url('https://via.placeholder.com/1400x500;">
-        
+        <div class="empreendimento">
+            <h3>EMPREENDIMENTO</h3>
+            <h2>Max Carneiros</h2>
+            <a href="#" class="c-button">
+                Veja mais
+                <img src="./dist/images/arrow-right-black.svg" class="arrow-btn">
+
+            </a>
+        </div>
     </div>
     <div class="item-slide" style="background-image: url('https://via.placeholder.com/1400x500;">
         

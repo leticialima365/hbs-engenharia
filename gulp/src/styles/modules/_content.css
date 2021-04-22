@@ -1,5 +1,6 @@
 .slide-topo{
     margin: 0;
+    
     .item-slide{
         width:100%;
         height: 37.6rem;
@@ -24,14 +25,73 @@
             transform: matrix(1, 0, 0, -1, 0, 0);
            
         }
+        .empreendimento{
+            position: absolute;
+            width: 32.7rem;
+            height: 10rem;
+            padding: 2.9rem 2.5rem;
+            bottom: 8.4rem;
+            left: 9.2rem;
+            background: rgba(19, 19, 19, 0.85);
+            backdrop-filter: blur(15px);
+            @mixin atMedium{
+                width: 100%;
+                left: 0;
+                bottom: 3rem;
+            }
+            h2{
+                font-size: 2.2rem;
+                font-weight: 900;
+                color: #fff;
+                text-transform: uppercase;
+                margin: 0;
+                @mixin atMedium{
+                    text-align: center;
+                }
+            }
+            h3{
+                font-size: 1.21rem;
+                font-weight: 400;
+                color: #fff;
+                text-transform: uppercase;
+                margin: 0 0 .8rem;
+                @mixin atMedium{
+                    text-align: center;
+                }
+            }
+            .c-button{
+                position: absolute;
+                bottom: -6rem;
+                right: -2.5rem;
+                background: $yellow;
+                color: $black;
+                display:flex;
+                align-items: center;
+                @mixin atMedium{
+                    width: 100%;
+                    right: 0;
+                    justify-content: center;
+
+                }
+                .arrow-btn{
+                    position: absolute;
+                    right: 1.2rem;
+                    width: 1.2rem;
+                    height: 1.2rem;
+                }
+            }
+        }
     }
     .owl-dots{
         position: absolute;
-        bottom: 5.9rem;
+        bottom: 4.9rem;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
+        @mixin atMedium{
+            bottom: 14rem;
+        }
         .owl-dot{
             width: .6rem;
             height: .6rem;
@@ -49,6 +109,9 @@
     position: relative;
     width: 100%;
     padding: 6.5rem 0 12.8rem;
+    @mixin atMedium{
+        padding: 2rem 0 6rem;
+    }
     &::before{
         content: '';
         width: 100%;
@@ -64,9 +127,16 @@
         width: 100%;
         align-items: stretch;
         z-index: 1;
+        @mixin atMedium{
+            flex-direction:column;
+        }
         .side{
             width: 49%;
             text-align: right;
+            @mixin atMedium{
+                width: 100%;
+                text-align: center;
+            }
             h2,h3{
                 @mixin fontDef;
                 color: $blue;
@@ -107,26 +177,64 @@
 .box-projeto{
     position: relative;
     padding: 5rem 0;
+    @mixin atMedium{
+        padding: 0 0 3.5rem;
+        text-align: center;
+    }
+    .flex{
+        @mixin atMedium{
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .c-button{
+        @mixin atMedium{
+            margin: 4rem auto 0;
+            width: 100%;
+        }
+    }
     .side{
         position: relative;
         width: 49%;
         z-index: 1;
+        @mixin atMedium{
+            width: 100%;
+        }
         p{
             width: 34rem;
             margin-top: 0;
+            @mixin atMedium{
+                width: 90%;
+            }
         }
     }
     .figures{
         width: 49%;
+        @mixin atMedium{
+            width: 100%;
+            overflow: hidden;
+        }
         &.center-vertical{
             figure{
                 position: absolute;
+                @mixin atMedium{
+                    position: relative;
+                    margin: 0;
+                }
                 &.big-img{
                     width: 53.5rem;
                     height: 40.5rem;
                     top: -10.9rem;
                     right: -12rem;
                     z-index: 2;
+                    @mixin atMedium{
+                        width: 110%;
+                        left: -5%;
+                        height: 28rem;
+                        top: initial;
+                        right: initial;
+                    }
                     img{
                         @mixin imgCover;
                     }
@@ -137,6 +245,9 @@
                     right: -2.7rem;
                     bottom: -10.5rem;
                     z-index: 3;
+                    @mixin atMedium{
+                        display: none;
+                    }
                     img{
                         @mixin imgCover;
                     }
@@ -146,14 +257,27 @@
         &.center-horizontal{
             display: flex;
             align-items: center;
+            
             figure{
                 position: absolute;
+                @mixin atMedium{
+                    width: 100%;
+                    position: relative;
+                    margin: 0;
+                    justify-content: center;
+                }
                 &.big-img{
                     width: 44.5rem;
                     height: 40.5rem;
-                    // top: -6.3rem;
                     left: -12rem;
                     z-index: 2;
+                    @mixin atMedium{
+                        width: 110%;
+                        left: -5%;
+                        height: 28vw;
+                        top: initial;
+                        right: initial;
+                    }
                     img{
                         @mixin imgCover;
                     }
@@ -162,8 +286,10 @@
                     width: 26rem;
                     height: 25rem;
                     left: 15.6rem;
-                    // bottom: initial;
                     z-index: 3;
+                    @mixin atMedium{
+                        display: none;
+                    }
                     img{
                         @mixin imgCover;
                     }
@@ -173,12 +299,23 @@
         &.bottom-left{
             figure{
                 position: absolute;
+                @mixin atMedium{
+                    position: relative;
+                    margin: 0;
+                }
                 &.big-img{
                     width: 44.5rem;
                     height: 40.5rem;
                     top: -10.9rem;
                     right: -12rem;
                     z-index: 2;
+                    @mixin atMedium{
+                        width: 110%;
+                        left: -5%;
+                        height: 28rem;
+                        top: initial;
+                        right: initial;
+                    }
                     img{
                         @mixin imgCover;
                     }
@@ -189,6 +326,7 @@
                     right: 15.3rem;
                     bottom: -6.5rem;
                     z-index: 3;
+                    @mixin atMedium{display:none;}
                     img{
                         @mixin imgCover;
                     }
@@ -198,6 +336,9 @@
     }
     &.p-bottom{
         padding-bottom: 10.5rem;
+        @mixin atMedium{
+            padding-bottom: 3.5rem;
+        }
     }
     &.btn-mod-wblue{
         .c-button{
@@ -230,17 +371,30 @@
 
     &.side-right{
         padding: 17.7rem 0 15rem;
+        @mixin atMedium{
+            padding: 0 0 3.5rem;
+        }
         .flex{
             flex-direction: row-reverse;
+            @mixin atMedium{
+                flex-direction: column-reverse;
+            }
         }
         .side{
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-end;
+            @mixin atMedium{
+                justify-content: center;
+                align-items: center;
+            }
         }
         .categ,.title-box,.subtitle-box,.c-button,p,.side{
             text-align: right;
+            @mixin atMedium{
+                text-align: center;
+            }
         }
     }
 }
@@ -334,6 +488,7 @@
     .title-box{
         font-size: 3rem;
         text-align: center;
+        font-weight: 400;
         margin-bottom: 3.3rem;
     }
     .flex{
@@ -341,11 +496,17 @@
         width: 100%;
         justify-content: center;
         align-items: center;
+        @mixin atMedium{
+            flex-direction: row;
+        }
         figure{
             width: 12.5%;
             height: 10.5rem;
             margin: 0;
             border: 1px solid #8CB6E7;
+            @mixin atMedium{
+                width: 33.3%;
+            }
             &:first-child{
                 border-left: none;
                 border-top: none;
@@ -361,6 +522,10 @@
             }
             &:nth-child(17),&:nth-child(18),&:nth-child(19),&:nth-child(20),&:nth-child(21),&:nth-child(22),&:nth-child(23),&:nth-child(24){
                 border-bottom: none;
+            }
+            @mixin atMedium{
+                border: none;
+                padding: 1rem 0;
             }
             img{
                 @mixin imgContain;

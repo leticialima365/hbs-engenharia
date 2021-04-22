@@ -6,27 +6,60 @@ header{
     z-index: 10;
     .flex{
         align-items: flex-start;
+        @mixin atMedium{
+            flex-direction: row;
+
+        }
     }
     .logo{
         width: 8rem;
         height: 3.3rem;
         margin: 1.5rem 0;
+        z-index: 101;
         img{
             @mixin imgContain;
         }
     }
+    .menu-mobile{
+        width: 3.2rem;
+        height: 3.2rem;
+        background: #fff;
+        justify-content: center;
+        align-items: center;
+        margin: 1.3rem 0.5rem 0 0rem;
+        display: none;
+        z-index: 101;
+        @mixin atMedium{
+            display: flex;
+        }
+        img{
+            width: 50%;
+            height: 50%;
+            object-fit: contain;
+        }
+    }
     .menu-line{
         padding-right: 10rem;
+        @mixin atMedium{
+            position: absolute;
+            top: 0;
+            left: -5%;
+            width: 110%;
+            padding: 5rem 0 0;
+            background: $black;
+            display: none;
+        }
         ul{
             display: flex;
             margin: 0;
+            @mixin atMedium{
+                flex-direction: column;  
+                padding: 0; 
+            }
             li{
                 position: relative;
-                &:hover{
-                    ul{display:flex;}
-                }
                 a{
-                    font-size: 1.3rem;
+                    font-size: 1.22rem;
                     color: #fff;
                     font-weight: 400;
                     text-decoration: none;
@@ -38,11 +71,17 @@ header{
                         background: $blue;
                         color: #fff;
                     }
+                    @mixin atMedium{
+                        border-bottom: 1px solid #fff;
+                    }
                 } 
-                &.open-sub{
-                    a{font-weight: 700;}
-                    ul{
-                        display: flex;
+                &.submenu{
+                    &:hover{
+                        a{font-weight: 700;}
+                        ul{
+                            display: flex;
+                            animation: openMenu .5s forwards ease;
+                        }
                     }
                 }
                 ul{
@@ -78,10 +117,19 @@ header{
         top: 0;
         background: #fff;
         display: block;
+        padding: 0;
+        margin: 0;
         @mixin transition;
         &:hover{
             background: $blue;
             color: #fff;
         }
+        @mixin atMedium{
+            display: none;
+        }
     }
+}
+@keyframes openMenu{
+    0%{opacity: 0;transform: translateY(-1rem);}
+    100%{opacity: 1;transform: translateY(0rem);}
 }

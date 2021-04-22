@@ -1,5 +1,5 @@
 const paths = {
-	project : 'localhost/atacama/hbr',
+	project : 'localhost/atacama/hbs-engenharia',
 	src : './gulp/src/',
 	dist : './app/dist/',
 	

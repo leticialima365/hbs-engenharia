@@ -1,11 +1,11 @@
 <div class="contato-footer">
     <div class="content-center">
-        <h2 class="title-box">
-            Contato
-        </h2>
         <figure class="logo-hbr">
             <img src="./dist/images/logo-hbr.svg" title="HBR Engenharia" alt="HBR Engenharia">
         </figure>
+        <h2 class="title-box">
+            Contato
+        </h2>
         <div class="list-contact line-b">
             <div class="item-contact">
                 <p class="tt-item">E-mail</p>

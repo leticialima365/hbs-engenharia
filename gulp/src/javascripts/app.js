@@ -9,10 +9,15 @@ var App = function () {
             }
         });
     }
+    function openSubmenu(){
+        $('.submenu').on('click',function(){
+            $(this).toggleClass('open-sub');
+        });
+    }
 
     function menuMobile(){
         $('.menu-mobile').on('click',function(){
-            $('nav').stop().slideToggle();
+            $('.menu-line').stop().slideToggle();
         });
     }
 
@@ -48,9 +53,10 @@ var App = function () {
         init: function () {
             slideTopo();
             slideGaleria();
+            // openSubmenu();
+            menuMobile();
             // slideUnidades();
             // scrollButtons();
-            // menuMobile();
             // scrollBPage();
             // headerColors();
         }

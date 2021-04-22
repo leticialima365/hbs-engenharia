@@ -11,6 +11,13 @@
         img{
             @mixin imgContain;
         }
+        @mixin atMedium{
+            width: 9rem;
+            position: relative;
+            top: initial;
+            right: initial;
+            margin: 0;
+        }
     }
     .title-box{
         font-size: 1.8rem;
@@ -29,12 +36,18 @@
         justify-content: flex-start;
         align-items: flex-start;
         padding: 2rem 0;
+        @mixin atMedium{
+            flex-direction: column;
+        }
         &.line-b{
             border-bottom: 1px solid #fff;
         }
         .item-contact{
             width: 22rem;
             text-align: left;
+            @mixin atMedium{
+                margin-bottom: 2rem;
+            }
         }
         .tt-item{
             color:#9E9E9E;
@@ -62,6 +75,9 @@
         font-size: 1.2rem;
         line-height: 2rem;
         margin: 1rem 0 0;
+        @mixin atMedium{
+            flex-direction: column;
+        }
         a{
             color:#fff;
             margin-right: 3rem;
