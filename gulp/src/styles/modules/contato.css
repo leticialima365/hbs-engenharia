@@ -1,0 +1,57 @@
+.p-fale-conosco{
+    .part-form{
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(22,22, 22, 1) 50%);
+    }
+    .part-localizacao{
+        background: linear-gradient(90deg, rgba(255, 175, 19, 1) 0%, rgba(255, 175, 19, 1) 66%, rgba(255, 255, 255, 1) 66%);
+        .title-box{
+            margin-top: -1rem;
+        }
+        .subtitle-box{
+            font-size: 2rem!important;
+            line-height: 2.8rem!important;
+        }
+
+    }
+    .box-contact-full{
+        .title-box{
+            font-size: 4.1rem;
+            line-height: 5.5rem;
+            margin-bottom: 1rem;
+        }
+        .subtitle-box{
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+        }
+    }
+    .flex{
+        align-items: stretch;
+    }
+    .small-title{
+        font-size: 1.1rem;
+        color: #9E9E9E;
+        font-weight: 400;
+        letter-spacing: .15rem;
+        text-transform: uppercase;
+    }
+    .side{
+        width: 50%;
+        padding: 9.5rem 0;
+    }
+    .list-contatos{
+        margin-bottom: 4rem;
+        .item-contato{
+            width: 80%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 1.3rem 0;
+            border-bottom:1px solid #9E9E9E;
+            a{
+                color: $black;
+                font-weight: 400;
+                font-size: 1rem;
+            }
+        }
+    }
+}

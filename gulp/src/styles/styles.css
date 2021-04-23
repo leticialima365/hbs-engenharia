@@ -12,6 +12,8 @@
 @import "modules/_footer";
 
 @import "modules/a-hbr";
+@import "modules/contato";
+@import "modules/empreendimentos";
 
 
 @import "modules/owl.carousel";

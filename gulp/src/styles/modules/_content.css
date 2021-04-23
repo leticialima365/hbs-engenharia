@@ -137,24 +137,6 @@
                 width: 100%;
                 text-align: center;
             }
-            h2,h3{
-                @mixin fontDef;
-                color: $blue;
-                font-weight: 400;
-                font-size: 2.22rem;
-                line-height: 3.5rem;
-                text-transform: uppercase;
-            }
-            h2{
-                margin-bottom: .8rem;
-
-            }
-            h3{
-                font-size: 4.4rem;
-                line-height: 5rem;
-                font-weight: 800;
-                margin: 0;
-            }
             &.s-right{
                 text-align: left;
                 h2{
@@ -163,13 +145,91 @@
                     color: $gray;
                     margin-bottom: 2rem;
                 }
-                p{
-                    font-size: 1.2rem;
-                    line-height: 1.83rem;
-                    color: $gray;
-                }
+               
             }
         }
+    }
+    h2,h3{
+        @mixin fontDef;
+        color: $blue;
+        font-weight: 400;
+        font-size: 2.22rem;
+        line-height: 3.5rem;
+        text-transform: uppercase;
+    }
+    h2{
+        margin-bottom: .8rem;
+
+    }
+    h3{
+        font-size: 4.4rem;
+        line-height: 5rem;
+        font-weight: 800;
+        margin: 0;
+    }
+    h4{
+        width: 48rem;
+        font-size: 1.64rem;
+        line-height: 2.4rem;
+        font-weight: 400;
+        margin: 0;
+        color: $gray;
+        text-align: center;
+        margin: 0 auto;
+        a{color: $blue;}
+        @mixin atMobile{
+            width: 100%;
+        }
+    }
+    p{
+        font-size: 1.2rem;
+        line-height: 1.83rem;
+        color: $gray;
+    }
+    .box-figures{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto 2rem;
+        display:flex;
+        justify-content: center;
+    }
+    .flex-figures{
+        display:flex;
+        justify-content: flex-start;
+        align-items: center;
+        figure{
+            position: relative;
+            width: 17rem;
+            height: 8rem;
+            display:flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 0 4rem;
+            box-sizing: border-box;
+            @mixin atMobile{
+                width: 12rem;
+            }
+            &:last-child{
+                .icon-more{
+                    display: none;
+                    margin-right: 0;
+                }
+            }
+            .icon-more{
+                width: 2.4rem;
+                height: 2.4rem;
+                position: absolute;
+                right: -5rem;
+            
+                background-image: url(../images/more.svg);
+                background-position: center;
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+            img{
+                @mixin imgContain;
+            }
+        } 
     }
     
 }
