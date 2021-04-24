@@ -200,19 +200,7 @@ p{
 
 
 /* placeholder */
-::-webkit-input-placeholder {@mixin fontDef;font-style:italic; color:$gray; font-size: 1.5rem;
-	@mixin atMedium{font-size: 22px;}
-	@mixin atSmall{font-size: 18px;}
-}
-::-moz-placeholder {@mixin fontDef;font-style:italic; color:$gray; font-size: 1.5rem; 
-	@mixin atMedium{font-size: 22px;}
-	@mixin atSmall{font-size: 18px;}
-}
-:-ms-input-placeholder {@mixin fontDef;font-style:italic; color:$gray; font-size: 1.5rem;
-	@mixin atMedium{font-size: 22px;}
-	@mixin atSmall{font-size: 18px;}
-}
-:-moz-placeholder {@mixin fontDef;font-style:italic; color:$gray; font-size: 1.5rem;
-	@mixin atMedium{font-size: 22px;}
-	@mixin atSmall{font-size: 18px;}
-}
+::-webkit-input-placeholder {@mixin fontDef;color:#9E9E9E; font-size: 1rem;}
+::-moz-placeholder {@mixin fontDef;color:#9E9E9E; font-size: 1rem; }
+:-ms-input-placeholder {@mixin fontDef;color:#9E9E9E; font-size: 1rem;}
+:-moz-placeholder {@mixin fontDef;color:#9E9E9E; font-size: 1rem;}

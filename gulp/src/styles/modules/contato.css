@@ -1,9 +1,27 @@
 .p-fale-conosco{
     .part-form{
         background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(22,22, 22, 1) 50%);
+        @mixin atMedium{
+            background: #fff;
+            .content-center{
+                width: 100%;
+            }
+        }
     }
     .part-localizacao{
+        position: relative;
+        padding-bottom: 5rem;
         background: linear-gradient(90deg, rgba(255, 175, 19, 1) 0%, rgba(255, 175, 19, 1) 66%, rgba(255, 255, 255, 1) 66%);
+        @mixin atMedium{
+            background: $yellow;
+            padding-bottom: 0;
+            .content-center{
+                width: 100%;
+            }
+            .side{
+                padding: 5rem 5rem 4rem;
+            }
+        }
         .title-box{
             margin-top: -1rem;
         }
@@ -11,7 +29,37 @@
             font-size: 2rem!important;
             line-height: 2.8rem!important;
         }
+        .text{
+            border-left: 1px solid #000;
+            padding-left: 1.5rem;
+            margin-top: 5rem;
+            h3{
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                font-weight: 400;
+                margin-bottom: 1rem;
+            }
+            p{
+                font-size: 1.15rem;
+            }
+        }
+        .mapa{
+            width: 49rem;
+            height: 37rem;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 5;
+            iframe{
+                width: 100%;
+                height: 100%;
+            }
+            @mixin atMedium{
+                width: 100%;
+                position: relative;
 
+            }
+        }
     }
     .box-contact-full{
         .title-box{
@@ -26,6 +74,9 @@
     }
     .flex{
         align-items: stretch;
+        @mixin atMedium{
+            flex-direction: column;
+        }
     }
     .small-title{
         font-size: 1.1rem;
@@ -37,6 +88,13 @@
     .side{
         width: 50%;
         padding: 9.5rem 0;
+        @mixin atMedium{
+            width: 100%;
+            padding: 3rem 5rem;
+            &:last-child{
+                background: #000;
+            }
+        }
     }
     .list-contatos{
         margin-bottom: 4rem;
@@ -52,6 +110,61 @@
                 font-weight: 400;
                 font-size: 1rem;
             }
+        }
+    }
+    form{
+        padding-left: 5rem;
+        @mixin atMedium{
+            padding-left: 0;
+        }
+    }
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 90%;
+    input, textarea{
+        width: 100%;
+        color: #fff;
+        font-size: 1.2rem; 
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #fff;
+        padding:1rem 0;
+        margin: 0.8rem 0 0;
+        &:focus{
+            outline: none;
+        }
+    }
+    .textarea-space{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 2rem;
+    }
+    label{
+        font-size: 1rem;
+        color: #9E9E9E;
+    }
+    textarea{
+        height: 7rem;
+    }
+    button, input[type='submit']{
+        height: 3.3rem;
+        font-size: 1rem;
+        width: 100%!important;
+        color: #000!important;
+        font-weight: 500;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        border: none;
+        @mixin transition;
+        cursor: pointer;
+        &:hover{
+            background: $yellow;
         }
     }
 }
