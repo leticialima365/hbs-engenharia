@@ -81,6 +81,36 @@ body {
 		height: 27rem;
 		padding: 0 0 7rem;
 	}
+	&.with-logo{
+		@mixin atMedium{
+			height: 45rem;
+		}
+	}
+	.flex{
+		align-items: stretch;
+		justify-content: flex-start;
+		@mixin atMedium{
+			justify-content: center;
+			align-items: center; 
+		}
+	}
+	.logo-projeto{
+		width: 7.37rem;
+		height: 7.37rem;
+		background: #fff;
+		margin-top: .7rem;
+		margin-right: 2rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@mixin atMedium{
+			margin-right: 0;
+			margin-bottom: 2rem;
+		}
+		img{
+			@mixin imgContain;
+		}
+	}
 	.title-box{
 		font-size: 5.2rem;
 		margin: 0;
@@ -120,6 +150,8 @@ a{text-decoration: none;}
 	&.c-white{color: #fff;}	
 	&.c-black{color: $black;}
 	@mixin atMedium{
+		font-size: 1.8rem;
+		letter-spacing: .5rem;
 		margin-top: 4rem;
 		display: block;
 	}

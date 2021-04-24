@@ -122,36 +122,10 @@
                 Conte com os nossos serviços para sua empresa e tenha como entrega dedicação, qualidade e a sua satisfação.
             </p>
         </div>
-        <a href="#" class="see-more" title="Ver mais Projetos" alt="Ver mais Projetos">Ver Mais</a>
     </div>
     <div class="position-slide">
-        <div class="slide-galeria owl-carousel">
-            <div class="item-galeria">
-                <figure>
-                    <img src="https://via.placeholder.com/389x296;" alt="">
-                </figure>
-            </div>
-            <div class="item-galeria">
-                <figure>
-                    <img src="https://via.placeholder.com/389x296;" alt="">
-                </figure>
-            </div>
-            <div class="item-galeria">
-                <figure>
-                    <img src="https://via.placeholder.com/389x296;" alt="">
-                </figure>
-            </div>
-            <div class="item-galeria">
-                <figure>
-                    <img src="https://via.placeholder.com/389x296;" alt="">
-                </figure>
-            </div>
-            <div class="item-galeria">
-                <figure>
-                    <img src="https://via.placeholder.com/389x296;" alt="">
-                </figure>
-            </div>
-        </div>
+        <?php include_once('inc/_slide-galeria.php'); ?>
+        <a href="#" class="see-more" title="Ver mais Projetos" alt="Ver mais Projetos">Ver Mais</a>
     </div>
 </div>
 

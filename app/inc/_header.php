@@ -37,9 +37,9 @@
 <header>
 	<div class="content-center">
 		<div class="flex">
-			<figure class="logo">
+			<a href="index.php" class="logo">
 				<img src="./dist/images/logo-hbr.svg" title="HBR Engenharia" alt="HBR Engenharia">
-			</figure>
+			</a>
 			<figure class="menu-mobile">
 				<img src="./dist/images/menu-mob.svg">
 			</figure>
@@ -47,19 +47,19 @@
 			<nav class="menu-line">
 				<ul>
 					<li>
-						<a href="#">A HBR</a>
+						<a href="a-hbr.php">A HBR</a>
 					</li>
 					<li>
-						<a href="#">Empreendimentos</a>
+						<a href="empreendimentos.php">Empreendimentos</a>
 					</li>
 					<li class="submenu">
-						<a href="#">Portfólio e Serviços</a>
+						<a>Portfólio e Serviços</a>
 						<ul>
 							<li>
-								<a href="#">Projetos</a>
+								<a href="projetos.php">Projetos</a>
 							</li>
 							<li>
-								<a href="#">HBR Metal</a>
+								<a href="hbr-metal.php">HBR Metal</a>
 							</li>
 						</ul>
 					</li>

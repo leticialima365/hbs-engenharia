@@ -1,0 +1,94 @@
+.p-projetos{
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 52%, rgba(229, 242, 244, 1) 52%, rgba(229, 242, 244, 1) 100%);
+    @mixin atMedium{
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 44%, rgba(229, 242, 244, 1) 44%, rgba(229, 242, 244, 1) 100%);
+    }
+    @mixin atMobile{
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 27%, rgba(229, 242, 244, 1) 27%, rgba(229, 242, 244, 1) 100%);
+    }
+    .buttons-cat{
+        justify-content: center;
+        padding: 2rem 0;
+        @mixin atMedium{
+            padding: 4rem 0;
+        }
+        .c-button{
+            width: 17.5rem;
+            font-size: 1.2rem;
+            text-align: center; 
+            background: #fff;
+            padding: .8rem 0;
+            margin-right: 1rem;
+            border: 1px solid $blue;
+            @mixin transition;
+            &:last-child{margin-right:0;}
+            &:hover, &.active{
+                border-color: $blue;
+                background: $blue;
+                color: #fff;
+            }
+            @mixin atMedium{
+                width: 90%;
+                height: 6.5rem;
+                font-size: 2.8rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 0 2rem;
+            }
+        }
+    }
+    .flex-cards{
+        padding: 0 0 6rem;
+        margin: 0;
+        .item-card{
+            position: relative;
+            height: 27.6rem;
+            @mixin atMedium{
+                height: 40rem;
+                margin-bottom: 3rem!important;
+            }
+            figure{
+                height: 100%;
+            }
+           
+            .info{
+                width: 100%;
+                height: 6.8rem;
+                position: absolute;
+                bottom:0;
+                left: 0;
+                background: #3D5467;
+                overflow: hidden;
+                padding-bottom: 2rem;
+                @mixin transition;
+                @mixin atMedium{ 
+                    height: 11.5rem;
+                    .list-info{
+                        opacity: 1!important;
+                    }
+                }
+                .list-info{
+                    margin-bottom: 0;
+                    opacity: 0;
+                    @mixin transition;
+                }
+                h3{
+                    color: #fff;
+                }
+                p{
+                    color: #9E9E9E;
+                }
+            }
+            &:hover{
+                .info{
+                    height: 11.5rem;
+                    background: $black;
+                    .list-info{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}

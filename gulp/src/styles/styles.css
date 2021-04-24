@@ -11,9 +11,13 @@
 @import "modules/_header";
 @import "modules/_footer";
 
+@import "modules/_slide-galeria";
+
 @import "modules/a-hbr";
-@import "modules/contato";
 @import "modules/empreendimentos";
+@import "modules/contato";
+@import "modules/projetos";
+@import "modules/projetos-interna";
 
 
 @import "modules/owl.carousel";
