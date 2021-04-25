@@ -90,7 +90,7 @@
     <div class="content-center">
         <div class="flex">
             <div class="side">
-                <span class="categ">Habitacional</span>
+                <span class="categ">Empreendimentos Imobiliários</span>
                 <h2 class="title-box">A qualidade</h2>
                 <h3 class="subtitle-box">no processo é o segredo <br> do sucesso.</h3>
                 <p>

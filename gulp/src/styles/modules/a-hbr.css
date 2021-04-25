@@ -1,5 +1,6 @@
 .p-a-hbr{
     .box-projeto{
+        overflow: hidden;
         &.b-1{
             background: linear-gradient(90deg, rgba(0,81,147,1) 0%, rgba(0,81,147,1) 66%, rgba(255,255,255,1) 66%);
             padding: 9.4rem 0 8.2rem;
@@ -169,6 +170,13 @@
             width: 35.5rem;
             padding: 1.2rem 0;
             border-bottom: 1px solid $gray;
+            @mixin transition;
+            display: block;
+            &:hover{
+                background: #E5F2F4;
+                p,.tt-item{transform: translatex(1rem);}
+                .tt-item p{transform: translatex(.5rem);}
+            }
             @mixin atMedium{
                 width: 100%;
                 text-align: left;
@@ -181,10 +189,12 @@
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
+                @mixin transition;
                 p{
                     color: $blue;
                     line-height: 0;
                     margin:0;
+                    @mixin transition;
                 }
                 img{
                     width: 1.8rem;
@@ -196,6 +206,7 @@
             p{
                 margin: 1.2rem 0 0;
                 color: $gray;
+                @mixin transition;
             }
         }
     }

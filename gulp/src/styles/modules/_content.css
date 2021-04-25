@@ -412,18 +412,36 @@
         .c-button{
             background: #fff;
             color: $blue!important;
+            border: 1px solid $blue;
+            &:hover{
+                background: $blue;
+                border: 1px solid #fff;
+                color: #fff!important;
+            }
         }
     }
     &.btn-mod-wblack{
         .c-button{
             background: #fff;
             color: $black!important;
+            &:hover{
+                background: $black;
+                color: #fff!important;
+            }
         }
     }
     &.btn-mod-bluew{
         .c-button{
             background: $blue;
             color: #fff!important;
+            border: 1px solid $blue;
+            &:hover{
+                background: #fff;
+                color: $blue!important;
+            }
+        }
+        .categ{
+            color: $blue!important; 
         }
     }
     &.c-white{

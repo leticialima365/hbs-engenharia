@@ -12,12 +12,15 @@
 @import "modules/_footer";
 
 @import "modules/_slide-galeria";
+@import "modules/_cards";
+@import "modules/_tabs";
 
 @import "modules/a-hbr";
 @import "modules/empreendimentos";
 @import "modules/contato";
 @import "modules/projetos";
 @import "modules/projetos-interna";
+@import "modules/hbr-metal";
 
 
 @import "modules/owl.carousel";

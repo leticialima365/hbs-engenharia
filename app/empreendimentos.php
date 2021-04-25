@@ -32,7 +32,7 @@
         <div class="content-center">
             <div class="center">
                 <div class="flex-cards">
-                    <div class="item-card">
+                    <a href="#" class="item-card">
                         <figure>
                             <img src="https://via.placeholder.com/388x388" alt="">
                         </figure>
@@ -53,8 +53,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="item-card">
+                    </a>
+                    <a href="#" class="item-card">
                         <figure>
                             <img src="https://via.placeholder.com/388x388" alt="">
                         </figure>
@@ -75,8 +75,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="item-card">
+                    </a>
+                    <a href="#" class="item-card">
                         <figure>
                             <img src="https://via.placeholder.com/388x388" alt="">
                         </figure>
@@ -97,8 +97,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="item-card">
+                    </a>
+                    <a href="#" class="item-card">
                         <figure>
                             <img src="https://via.placeholder.com/388x388" alt="">
                         </figure>
@@ -119,8 +119,8 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="item-card">
+                    </a>
+                    <a href="#" class="item-card">
                         <figure>
                             <img src="https://via.placeholder.com/388x388" alt="">
                         </figure>
@@ -141,7 +141,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </a>
                     
                 </div>
             </div>

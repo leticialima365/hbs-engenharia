@@ -1,0 +1,20 @@
+.p-hbr-metal{
+    .banner-topo-page{
+        @mixin atMedium {
+            height: 30rem;
+            padding-bottom: 10rem; 
+        }
+    }
+    .content-empreendimentos{
+        background: #E5F2F4;
+        padding: 3.7rem 0 1.4rem;
+        .subtitle-box{
+            font-size: 2rem;
+            color: $black;
+            margin-bottom: 3.8rem; 
+        }
+    }
+    .p-projetos {
+       background: #E5F2F4;
+    }
+}

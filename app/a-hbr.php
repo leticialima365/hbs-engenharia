@@ -38,7 +38,7 @@
 
 					</h3>
 					<div class="list-downloads">
-						<div class="item-download">
+						<a href="#" class="item-download">
 							<div class="tt-item">
 								<img src="./dist/images/down-arrow-b.svg" alt="">
 								<p>ISO 9001 2015</p> 
@@ -46,8 +46,8 @@
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus volutpat commodo enim quis molestie. Ut a molestie orci.
 							</p>
-						</div>
-						<div class="item-download">
+						</a>
+						<a href="#" class="item-download">
 							<div class="tt-item">
 								<img src="./dist/images/down-arrow-b.svg" alt="">
 								<p>ISO 9001 2015</p> 
@@ -55,7 +55,7 @@
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus volutpat commodo enim quis molestie. Ut a molestie orci.
 							</p>
-						</div>
+						</a>
 					</div>
 				</div>
 				<div class="figures bottom-left">

@@ -65,7 +65,7 @@
 					</li>
 				</ul>
 			</nav>
-			<a href="#" class="c-button">Contato</a>
+			<a href="fale-conosco.php" class="c-button">Contato</a>
 		</div>
 	</div>
 </header>
